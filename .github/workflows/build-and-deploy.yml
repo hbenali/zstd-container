@@ -7,7 +7,7 @@ jobs:
   compute-versions:
     runs-on: ubuntu-22.04
     outputs:
-      latest: ${{ steps.versions.outputs.latest }}
+      latest: ${{ fromJson(steps.versions.outputs.latest) }}
       versions: ${{ steps.versions.outputs.versions }}
     concurrency:
       group: compute-versions${{ github.workflow }}${{ matrix.os }}${{ github.event.number || github.ref }}
