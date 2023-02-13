@@ -77,4 +77,4 @@ jobs:
     container: eclipse-temurin:18
     if: false
     steps:
-      - uses: facebook/zstd@v1.5.2
+      - uses: facebook/zstd@v1.5.4
