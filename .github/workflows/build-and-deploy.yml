@@ -26,6 +26,7 @@ jobs:
     needs:
       - compute-versions
     strategy:
+      fail-fast: false
       matrix:
         zstd: ${{ fromJson(needs.compute-versions.outputs.versions) }}
         include:
