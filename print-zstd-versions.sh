@@ -7,5 +7,5 @@ if [ -n "$GITHUB_TOKEN" ]; then
         https://api.github.com/graphql \
         | jq -c "$(cat filter.jq)"
 else
-    echo '["1.5.2","1.5.1","1.5.0"]'
+    echo '["1.5.2","1.5.1","1.5.0","1.5.5"]'
 fi
