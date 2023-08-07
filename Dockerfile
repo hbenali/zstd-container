@@ -16,4 +16,5 @@ COPY --from=builder /pkg /
 RUN mkdir -p /usr/local/share/licenses/zstd
 COPY --from=builder /zstd-${ZSTD_VERSION}/LICENSE /usr/local/share/licences/zstd/
 # Just run `zstd` if no other command is given
-CMD ["/usr/local/bin/zstd"]
+CMD ["--help"]
+ENTRYPOINT ["/usr/local/bin/zstd"]
