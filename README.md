@@ -4,4 +4,4 @@ A lightweight container with zstandard compressing utilities.
 
 DockerHub: https://hub.docker.com/r/hbenali/zstd
 
-New containers get generated upon stable releases from Facebook.
+New containers get generated upon dev releases from Facebook.
